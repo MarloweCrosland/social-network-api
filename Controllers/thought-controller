@@ -1,0 +1,22 @@
+const { Thought, User } = require('../models);
+
+const thoughtController = {
+    // get all thoughts
+    getAllThoughts(req, res) {
+      Thought.find({})
+        .select('-__v')
+        .sort({ _id: -1 })
+        .then(thoughtData => res.json(thoughtData))
+        .catch(err => {
+          console.log(err);
+          res.sendStatus(400);
+        });
+    },
+}
+getThought,
+getThoughtById,
+createThought,
+updateThought,
+removeThought,
+createReaction,
+removeReaction
