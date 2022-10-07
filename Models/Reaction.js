@@ -1,17 +1,12 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
 
 const ReactionSchema = new Schema({
     reactionId: {
         type: String,
-        
     },
     reactionBody: {
-        type: String
+        type: String,
     },
-    username: {
-
-    },
-    createdAt: {
-        
-    }
-})
+    username: {},
+    createdAt: {},
+});
