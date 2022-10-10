@@ -1,5 +1,5 @@
 
-<h1 align="center">Team Profile Generator</h1>
+<h1 align="center">Social Network Api</h1>
 
 ![badge](https://img.shields.io/badge/license-Apache-brightgreen)<br />
 
